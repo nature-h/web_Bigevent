@@ -3,7 +3,7 @@ html,body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background: url('../images/login_bg.jpg') no-repeat center;
+    background: url('/assets/images/login_bg.jpg') no-repeat center;
     background-size: cover;
 }
 .loginBox{
@@ -17,9 +17,28 @@ html,body {
 }
 .title-box {
     height: 60px;
-    background: url('../images/login_title.png') no-repeat center;
+    background: url('/assets/images/login_title.png') no-repeat center;
 }
 
 .reg-box{
     display: none;
+}
+.layui-form {
+    padding: 0 30px;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+.layui-form-item{
+    position: relative;
+}
+.layui-form-item .layui-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.layui-input {
+    padding-left: 32px;
 }
