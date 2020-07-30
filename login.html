@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录页面</title>
+     <!-- 导入 layUI样式 -->
+     <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
 </head>
 <body>
-    
+    <!-- 头部logo -->
+    <div class="layui-main">
+        <img src="./assets/images/logo.png" alt="">
+    </div>
+
+    <!-- 登录注册区域 -->
+    <div class="loginBox">
+        <div class="title-box"></div>
+        <!-- 登录的div -->
+        <div class="login-box" id="link_reg">
+            <a href="javascript:;">去注册账号</a>
+        </div>
+        <!-- 注册的div -->
+        <div class="reg-box">
+            <a href="javascript:;" id="link_login">去登录</a>
+        </div>
+    </div>
+    <!-- 引入juqery -->
+    <script src="./assets/lib/jquery.js"></script>
+    <script src="./assets/js/login.js"></script>
 </body>
 </html>
