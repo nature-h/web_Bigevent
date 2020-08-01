@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大事件后台首页</title>
+    <!-- 导入layui的样式表 -->
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/fonts/iconfont.css">
 </head>
-<body>
-    
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">
+                <img src="/assets/images/logo.png" alt="">
+            </div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;" class="user">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        <span class="text-avatar">A</span>
+                        个人中心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">更换头像</a></dd>
+                        <dd><a href="">重置密码</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"></span><a href="javascript:;" id="btnLogout"><span class="iconfont icon-tuichu"></span>退出</a></li>
+            </ul>
+        </div>
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                  <div class="userinfo">
+                      <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                       <span class="text-avatar">A</span>
+                      <span id="welcome">欢迎xxx</span>
+                  </div>
+                <ul class="layui-nav layui-nav-tree" lay-shrink="all">
+                    <li class="layui-nav-item layui-this"><a href="/home/dashboard.html" target="fm"><span
+                                class="iconfont icon-home"></span>首页</a></li>
+                    <li class="layui-nav-item">
+                        <a class="" href="javascript:;"><span class="iconfont icon-16"></span>文章管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-list"></i>  文章类别</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-table"></i> 文章列表</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-file"></i> 发布文章</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-form"></i> 基本资料</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-friends"></i> 更换头像</a></dd>
+                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-password"></i> 重置密码</a></dd>
+                        </dl>
+                    </li>                   
+                </ul>
+            </div>
+        </div>
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            
+            <iframe src="/home/dashboard.html" name="fm" frameborder="0"></iframe>
+            
+        </div>
+
+        <div class="layui-footer" >
+            <!-- 底部固定区域 -->
+            © www.hhh.com - 哈哈哈哈
+        </div>
+    </div>
+    <!-- 导入layui.js -->
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <!-- 导入jQuery -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 导入baseAPI -->
+    <script src="/assets/js/baseAPI.js"></script>
+    <!-- 导入index.js -->
+    <script src="/assets/js/index.js"></script>
 </body>
 </html>
